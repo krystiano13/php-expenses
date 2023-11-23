@@ -11,6 +11,7 @@
         <meta name="keywords" content="expenses, tracking, tracker, expense" />
         <meta name="description" content="PHP expenses tracker with csv file import" />
         <title>PHP expenses</title>
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
         <?php

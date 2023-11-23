@@ -1,0 +1,32 @@
+*,*::before,*::after {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width : 100vw;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table, td, th {
+    border: solid black 1px;
+}
+
+td,th {
+    background-color: white;
+    padding : .25rem;
+}
+
+p {
+    margin : .5rem;
+}
+
+table {
+    background-color: black;
+}
