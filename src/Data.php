@@ -9,12 +9,17 @@ class Data
 
     public function __construct(string $path)
     {
+        $this -> table = array();
         $this -> file = fopen($path, 'r');
 
         while($row = fgetcsv($this -> file,null,',')) {
-            var_dump($row);
+            array_push($this -> table, $row);
         }
 
         fclose($this -> file);
+    }
+
+    public function getTable():array {
+        return $this -> table;
     }
 }
