@@ -2,7 +2,7 @@
     "name": "krystian/php-expenses",
     "autoload": {
         "psr-4": {
-            "Krystian\\PhpExpenses\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
