@@ -14,7 +14,11 @@
     </head>
     <body>
         <?php
-            $table = new \App\Table();
+            $data = new App\Data('./src/sample_1.csv');
+            $data -> calculateIncome();
+            echo $data -> income.'<br />';
+            echo $data -> outcome.'<br />';
+            echo $data -> net;
         ?>
     </body>
 </html>
