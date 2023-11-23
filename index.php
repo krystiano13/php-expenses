@@ -1,7 +1,5 @@
 <?php
-
-include 'vendor/autoload.php';
-
+    include 'vendor/autoload.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,5 +12,9 @@ include 'vendor/autoload.php';
         <meta name="description" content="PHP expenses tracker with csv file import" />
         <title>PHP expenses</title>
     </head>
-    <body></body>
+    <body>
+        <?php
+            $table = new \App\Table();
+        ?>
+    </body>
 </html>
