@@ -14,11 +14,13 @@
     </head>
     <body>
         <?php
-            $data = new App\Data('./src/sample_1.csv');
-            $data -> calculateIncome();
-            echo $data -> income.'<br />';
-            echo $data -> outcome.'<br />';
-            echo $data -> net;
+          $table = new App\Table();
+          $data = new App\Data('./src/sample_1.csv');
+          $data ->calculateIncome();
+
+          echo "<p>Total income:{$data ->income}</p>";
+          echo "<p>Total expense:{$data ->outcome}</p>";
+          echo "<p>Net total:{$data ->net}</p>";
         ?>
     </body>
 </html>
