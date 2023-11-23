@@ -26,7 +26,12 @@ class Table
     private function createRow(int $index) {
         echo '<tr>';
             for($i=0; $i < count($this -> expensesTable[$index]); $i++) {
-                echo "<td>{$this->expensesTable[$index][$i]}</td>";
+                if($i == 3) {
+                    echo "<td class='num'>{$this->expensesTable[$index][$i]}</td>";
+                }
+                else {
+                    echo "<td>{$this->expensesTable[$index][$i]}</td>";
+                }
             }
         echo '</tr>';
     }

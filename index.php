@@ -12,6 +12,7 @@
         <meta name="description" content="PHP expenses tracker with csv file import" />
         <title>PHP expenses</title>
         <link rel="stylesheet" href="index.css" />
+        <script defer src="index.js"></script>
     </head>
     <body>
         <?php
